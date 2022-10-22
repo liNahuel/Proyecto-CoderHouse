@@ -1,198 +1,134 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: #908d89;
-    font-family: "calibri";
-  }
-  
-  /*Cabeza de la pagina*/
-  
-  header {
-    background: #d9d9d9;
-    width: 100%;
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .menu {
-    width: 900px;
-    margin: 0 auto;
-  }
-  
-  .imagen-izquierda {
-    width: 120px;
-    height: 100px;
-    float: left;
-    padding: 8px;
-  }
-  
-  nav {
-    float: right;
-  }
-  
-  nav ul li {
-    list-style: none;
-    margin-left: 75px;
-    padding: 12px 0;
-    float: left;
-    position: relative;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #444;
-    font-weight: bold;
-  }
-  
-  nav ul li a::before {
-    display: block;
-    content: "";
-    width: 0%;
-    background: #444;
-    height: 5px;
-    top: 0;
-    position: absolute;
-    transition: width 0.2s;
-  }
-  
-  nav ul li a:hover::before {
-    width: 100%;
-  }
-  
-  
-  .img-izquierda__despedida{
-    width: 120px;
-    height: 100px;
-    padding: 8px;
-    float: 4.11px 841.79 ;
-  }
-  .img-iconos__chicos{
-    width: 1cm;
-    height: 1cm;
-  }
-
-
-  .alinear-medio{
-    position:fixed;
-    text-align: center;
-  }
-
-  /* Parte principal de la pagina */
-
-  main{
-    background-color: #908d89;
-    width: 100%;
-   margin: 0px;
-   padding: 0px;
-   height: 100%;
-    
-  }
-
-  .section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-.section img{
-  width: 500px;
-  height: 500px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-  /*Pie de pagina */
-
-  footer {
-    background-color: #F5F5F5;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom:0;
-    padding: 10px;
-    
-  }
-
-.pie-pagina{
-  width: 100%;
-  background-color: #0a141d;
+body {
+  background: #908d89;
+  font-family: "calibri";
 }
-.pie-pagina .grupo-1{
+
+/*Cabeza de la pagina*/
+
+/*Encabezado*/
+
+.contenedor {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap:50px;
-  padding: 45px 0px;
-}
-.pie-pagina .grupo-1 .box figure{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img{
-  width: 250px;
-}
-.pie-pagina .grupo-1 .box h2{
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-.pie-pagina .grupo-1 .box p{
-  color: #efefef;
-  margin-bottom: 10px;
-}
-.pie-pagina .grupo-1 .red-social a{
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  background-color: #0d2033;
-  text-align: center;
-  transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .red-social a:hover{
-  color: aqua;
-}
-.pie-pagina .grupo-2{
-  background-color: #0a1a2a;
-  padding: 15px 10px;
-  text-align: center;
-  color: #fff;
-}
-.pie-pagina .grupo-2 small{
-  font-size: 15px;
+  overflow: hidden;
+  padding: var(--paddingsecciones);
 }
 
+.menu_navegacion {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #d9d9d9;
+}
+
+.logo {
+  height: 80px;
+}
+.logo img {
+  height: 100%;
+}
+
+.enlances li {
+  list-style: none;
+  display: inline-block;
+  padding: 12px;
+  margin-left: 20px;
+  position: relative;
+}
+.enlances li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.enlances li a::before {
+  width: 0;
+  background: rgb(119, 32, 32);
+  height: 5px;
+  top: 0;
+  display: block;
+  position: absolute;
+  content: "";
+  transition: width 1s;
+}
+
+.enlances li a:hover::before {
+  width: 100%;
+}
+
+/* Parte principal de la pagina */
+
+.main {
+  height: 600px;
+  margin: 20px auto;
+}
+.h2 {
+  text-align: center;
+}
+
+/*Pie de pagina */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #d9d9d9;
+}
+
+.footer_logo img {
+  width: 80px;
+  border-radius: 50px;
+}
+
+.footer_redes {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.footer_copy {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.footer_copy hr {
+  border: none;
+  height: 0.01em;
+  background-color: #7a7a7a;
+}
 /*---Pagina de contacto---*/
 
-.container-form{
+.container-form {
   width: 100%;
   max-width: 1100px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   margin-top: 90px;
 }
-.container-form h2{
+.container-form h2 {
   margin-bottom: 15px;
-  font-size: 35px
+  font-size: 35px;
 }
-.container-form p{
+.container-form p {
   font-size: 17px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
-.container-form a{
+.container-form a {
   font-size: 17px;
   display: inline-block;
   text-decoration: none;
@@ -201,14 +137,14 @@
   color: black;
   font-weight: 700;
   line-height: 45px;
-  
 }
 
-.container-form a i{
+.container-form a i {
   color: orange;
   margin-right: 10px;
 }
-.container-form form .campo, textarea{
+.container-form form .campo,
+textarea {
   width: 100%;
   padding: 15px 10px;
   font-size: 16px;
@@ -217,13 +153,13 @@
   border-radius: 3px;
   outline: 0px;
 }
-.container-form form textarea{
+.container-form form textarea {
   max-width: 530px;
   min-width: 530px;
   min-height: 140px;
   max-height: 150px;
 }
-.container-form .btn-enviar{
+.container-form .btn-enviar {
   padding: 15px;
   font-size: 16px;
   border: none;
@@ -234,36 +170,34 @@
   cursor: pointer;
   transition: all 300ms ease;
 }
-.container-form .btn-enviar:hover{
+.container-form .btn-enviar:hover {
   background: #e39403;
 }
 
 /* ---Galeria--- */
 
-.pizzeta{
- font-weight: 400;
- text-align: left;
- padding: 20px 0;
- font-size:40px;
+.pizzeta {
+  font-weight: 400;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 40px;
 }
 
-.pizzeta-1{
+.pizzeta-1 {
   width: 30%;
   vertical-align: top;
   height: 300px;
-  
 }
-.pizzeta-2{
+.pizzeta-2 {
   vertical-align: top;
   height: 150px;
   width: 200;
-  
 }
 
 /* Quienes somos? */
 
 #centro {
-  background: #66FFFF;
+  background: #66ffff;
   margin: 0 auto;
   border: thin solid #000000;
   width: 200px;
