@@ -76,31 +76,60 @@ body {
 
 /*Pie de pagina */
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.footer  {
+  background-color: #d9d9d9;
+  width: 100%;
+}
+
+.footer .footer_grupo1{
+  width: 100%;
   max-width: 1200px;
   margin: auto;
-  background-color: #d9d9d9;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
 }
 
-.footer_logo img {
-  width: 80px;
-  border-radius: 50px;
-}
-
-.footer_redes {
+.footer .footer_grupo1 .box figure{
   display: flex;
-  flex-direction: column;
-  padding: 1em;
+  justify-content: center;
+  width: 150px;
+  align-items: center;
+}
+
+.footer .footer_grupo1 .box figure img{
+  width: 100%;
+  border-radius: 100%;
+}
+
+.footer .footer_grupo1 .box h2{
+  font-size:25px;
+  color: black;
+  font-weight: 700;
+}
+
+.footer .footer_grupo1 .box .footer_redes a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.footer .footer_grupo1 .box .footer_redes a:hover{
+  color:grey;
 }
 
 .footer_copy {
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  padding: 0 40px;
+ 
 }
 
 .footer_copy hr {
